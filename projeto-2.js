@@ -83,14 +83,18 @@ do {
 //Nessa etapa colocamos as condições de vitória do usuário, do computador e o caso de empate também caso nenhum dos dois ganhem.  
   if (vitoria > vitoriaPC) {
     console.log(
-      `Parabéns! Você foi o grande campeão com um total de ${vitoria} vitória(s).`
-    );
+      `Parabéns! Você foi o grande campeão com um total de ${vitoria} vitória(s).
+       O computador terminou o jogo com um placar de ${vitoriaPC} vitória(s).
+      `);
   } else if (vitoria < vitoriaPC) {
-    console.log(`Que pena! O computador ganhou com um total de ${vitoriaPC} vitória(s).
+    console.log(`Que pena! O computador foi o grande campeão com um total de ${vitoriaPC} vitória(s).
+    Você terminou o jogo com um placar de ${vitoria} vitória(s).
     `);
   } else {
     console.log(`
-    Essa partida terminou empatada. 
+    Essa partida terminou empatada.
+    Você terminou o jogo com um placar de ${vitoria} vitória(s).
+    O computador terminou o jogo com um placar de ${vitoriaPC} vitória(s).
     `);
   }
 //E por fim, a validação se o jogador deseja ou não jogar novamente.  
